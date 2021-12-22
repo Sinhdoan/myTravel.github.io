@@ -1,0 +1,180 @@
+/* --------pc small-------------- */
+@media (min-width: 1024px) and (max-width: 1239px){
+    .videpTour-img-cover .videoTour-item{
+        right: 17%;
+    }
+    .popularCountries-item {
+        height: 100%;
+        padding: 0 12px;
+        margin: 10px -12px;
+        border-radius: 10px;
+    }
+    .popularCountries-img{
+        height: 280px;
+    }
+}
+
+
+/* ------- tablet-------------- */
+@media (min-width: 740px) and (max-width: 1023px){
+    #header .nav .nav-list{
+        display: none;
+        position: absolute;
+        top: var(--height-header);
+        left: 0;
+        width: 100%;
+        height: 288px;
+        background-color: var(--primany-color);
+        padding: 20px;
+    }
+    .nav-item{
+        line-height: 55px;
+        width: 100%;
+        border-bottom: 1px solid var(--white-color);
+        padding: 0 24px;
+    }
+    .nav-item:hover{
+        background-color: var(--white-color);
+    } 
+     .nav-item:hover .nav-item--link{
+         color: var(--black-color);
+     }
+    .nav-item .nav-item--link{
+        color: var(--white-color);
+    }  
+    .menu-bars{
+        display: block;
+    }
+    .slider-heading{
+        transform: translateY(19%);
+    }
+    .slider-heading .slider-title{
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .services .services-column--item{
+        width: 50%;
+        flex: 0 0 50%;
+    }
+    .videpTour-img-cover .videoTour-item{
+        right: 5%;
+    }
+    #content .acchived-list .acchived-item{
+        width: 50%;
+        flex:  0 0 50%;
+        margin: 0 -12px 20px;
+        padding: 0 12px;
+      
+    }
+    .popularCountries-item{
+        width: 50%;
+        flex: 50%;
+        margin: 0 0px 20px;
+        padding: 0 10px;
+    
+    }
+}
+
+
+/* --------mobile-------------- */
+@media (max-width: 739px){
+    #header .nav .nav-list{
+      
+        display: none;
+        position: absolute;
+        top: var(--height-header);
+        left: 0;
+        width: 100%;
+        height: 288px;
+        background-color: var(--primany-color);
+        padding: 20px;
+    }
+    .nav-item{
+        line-height: 55px;
+        width: 100%;
+        border-bottom: 1px solid var(--white-color);
+        padding: 0 24px;
+    }
+    .nav-item:hover{
+        background-color: var(--white-color);
+    } 
+     .nav-item:hover .nav-item--link{
+         color: var(--black-color);
+     }
+    .nav-item .nav-item--link{
+        color: var(--white-color);
+    }  
+    .menu-bars{
+        display: block;
+    }
+    #content .container{
+        padding: 50px 8px;
+    }
+    #slider .slider-img{
+        height: 340px;
+    }
+    .slider-heading{
+        transform: translateY(10%);
+    }
+    .slider-heading .slider-text{
+        font-size: 20px;
+    }
+    .slider-heading .slider-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .services-column-left,
+    .services .services-column-right{
+        width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .services .services-column--item{
+        width: 100%;
+        flex: 0 0 100%;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+    
+    .services .services-column--img{
+        height: 240px;
+    }
+    .services .services-column--text{
+        text-align: center;
+    }
+    #content .videoTour-img{
+        height: 360px;
+    }
+    .videpTour-img-cover .videoTour-item{
+        width: 50%;
+    }
+    #content .acchived{
+        padding: 0 8px;
+    }
+    #content .acchived-list .acchived-item{
+        width: 50%;
+        flex: 0 0 50%;
+        margin: 20px -8px;
+        padding: 0 8px;
+    }
+    .acchived-number{
+        font-size: 23px;
+    }
+    .tourPackage-item{
+        width: 100%;
+        flex: 0 0 100%;
+        margin: 20px 0;
+    }
+    #content .tourPackage{
+        padding: 50px 30px;
+    }
+    #content .popularCountries{
+        padding: 50px 20px;
+    }
+    .popularCountries-item{
+        width: 100%;
+        flex: 0 0 100%;
+        margin: 20px 0;
+    }
+}

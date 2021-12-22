@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Mulish', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#header{
+    width: 100%;
+    height: var(--height-header);
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+#header .container{
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+}
+#header .nav{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#header .nav .nav-list{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+.menu-bars{
+    display: none;
+    font-size: 30px;
+    padding: 15px;
+    color: var(--primany-color);
+}
+.nav-item{
+    margin: 0 30px;
+   
+}
+.nav-item--link{
+    display: block;
+    width: 100%;
+    color: var(--primany-color);
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+.nav-item--border{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--primany-color);
+    transition: all 0.5s;
+}
+.nav-item--link:hover .nav-item--border{
+    width: 100%;
+}   
+
+/* ------------CONTENT-------- */
+#content{
+    height: 100%;
+    width: 100%;
+    margin-top: var(--height-header);
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primany-color); 
+}
+#slider .slider-img{
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+#slider .slider-content{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.slider-heading{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(40%);
+}
+.slider-heading .slider-title{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 45px;
+}
+.slider-heading  .slider-text{
+    font-weight: 700;
+    font-size: 27px;
+    color: var(--primany-color);
+    line-height: 37px;
+    margin-bottom: 25px;
+}
+
+#content .container{
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px;
+}
+#content .services{
+    height: 100%;
+}
+.services-column-left{
+    height: 100%;
+}
+.services-column-left .services-left--title{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 37px;
+    color: var(--black-color);
+}
+.services-column-left .services-left--text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--gray-color);
+}
+.services .services-column-right{
+    height: 100%;
+    justify-content: space-around;
+}
+.services .services-column--item{
+    height: 100%;
+    margin: 0 -24px 30px;
+    padding: 0 24px;
+    overflow: hidden;
+}
+.services .services-column--img{
+    width: 100%;
+    height: 180px;
+    background-position: center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.services-column--content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.services .services-column--name{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--primany-color);
+}
+.services .services-column--text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--gray-color);
+    text-align: start;
+    margin-top: 10px;
+}
+#content .videoTour{
+    width: 100%;
+    height: 100%;
+}
+#content .videoTour-img{
+    width: 100%;
+    height: 504px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+}
+#content .videoTour-img .videpTour-img-cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+.videpTour-img-cover .videoTour-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translateY(10%);
+}
+.videpTour-img-cover .videoTour-content .videoTour-title{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    color: var(--white-color);
+}
+.videpTour-img-cover .videoTour-content .videoTour-name{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 37px;
+    color: var(--white-color);
+}
+.videpTour-img-cover .videoTour-item{
+    width: 663px;
+    height: 314px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    right: 25%;
+    border-radius: 10px;
+    
+}
+.btn-play{
+    transform: translateY(50%);
+    height: 50%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.videpTour-img-cover .videoTour-item:hover .btn-play{
+   padding: 2px;
+}
+
+#content .acchived{
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    margin-top: 66px;
+}
+#content .acchived-list{
+    height: 100%;
+    justify-content: space-between;
+}
+#content .acchived-list .acchived-item{
+    margin: 0 -24px;
+    padding: 0 24px;
+    height: 100%;
+    text-align: center;
+}
+.acchived-item .acchived-icon--img{
+    width: 60px;
+    height: 47px;
+    margin: 0 auto 20px;
+    transition: all 0.3s;
+}
+.acchived-icon--img:hover{
+    transform: translateY(-10px);
+}
+.acchived-content{
+    width: 100%;
+    height: 100%;
+}
+.acchived-number{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--black-color);
+}
+.acchived-name{
+    font-weight: 700;
+    color: var(--primany-color);
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+#content .tourPackage{
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px;
+}
+.tourPackage-heading{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.tourPackage-heading .tourPackage-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 37px;
+    color: var(--gray-color);
+}
+.tourPackage-heading .tourPackage--slogan{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 37px;
+    color: var(--primany-color);
+}
+.tourPackage .tourPackage-list{
+    padding: 0;
+    margin: 20px 0;
+    height: 100%;
+    justify-content: space-between;
+}
+.tourPackage-item{
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.tourPackage-img{
+    width: 100%;
+    height: 246px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-origin: content-box;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.tourPackage-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.tourPackage-price{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 37px;
+    color: var(--black-color);
+}
+.tourPackage-name{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 37px;
+    color: var(--primany-color);
+}
+.tourPackage-times{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 37px;
+    color: var(--black-color);
+}
+
+#content .popularCountries{
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px 100px;
+} 
+.popularCountries .popularCountries-heading{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.popularCountries-heading-text{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+    color: var(--gray-color);
+}
+.popularCountries-heading-title{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 37px;
+    color: var(--primany-color);
+}
+.popularCountries-list{
+    height: 100%;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.popularCountries-item{
+    height: 100%;
+    padding: 0 24px;
+    margin: 10px -24px;
+    border-radius: 10px;
+}
+.popularCountries-img{
+    height: 350px;
+    width: 100%;
+    background-origin: content-box;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.popularCountries-content{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.popularCountries-name{
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 37px;
+}
+.popularCountries{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--black-color);
+}
